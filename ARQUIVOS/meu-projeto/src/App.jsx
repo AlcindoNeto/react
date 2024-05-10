@@ -8,9 +8,13 @@ import Evento from './components/Evento';
 import Form from './components/Form';
 import Condicional from './components/Condicional';
 import OutraLista from './components/OutraLista.jsx';
+import { useState } from 'react';
+import SeuNome from './components/SeuNome.jsx';
+import Saudacao from './components/Saudacao.jsx';
 
 
 function App() {
+  const [nome, setNome] = useState()
   const meusItens = ['React', 'Vue', 'Angular']
 /*   const name = 'Alce'
   const newName = name.toLocaleUpperCase()
@@ -44,9 +48,12 @@ function App() {
       <Evento/> */}
       {/* <h1>Renderização Condicional</h1>
       <Condicional/> */}
-      <h1>Renderização de Listas</h1>
+      {/* <h1>Renderização de Listas</h1>
       <OutraLista itens={meusItens}/>
-      <OutraLista itens={[]}/>
+      <OutraLista itens={[]}/> */}
+      <h1>State Lift</h1>
+      <SeuNome setNome={setNome}/>
+      <Saudacao nome={nome}/>
     </div>
   );
 }
