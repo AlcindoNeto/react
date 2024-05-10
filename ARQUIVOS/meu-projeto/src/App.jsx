@@ -7,16 +7,18 @@ import List from './components/List';
 import Evento from './components/Evento';
 import Form from './components/Form';
 import Condicional from './components/Condicional';
+import OutraLista from './components/OutraLista.jsx';
 
 
 function App() {
-  const name = 'Alce'
+  const meusItens = ['React', 'Vue', 'Angular']
+/*   const name = 'Alce'
   const newName = name.toLocaleUpperCase()
   const nome = 'Joao'
 
   function sum(a, b){
     return a + b;
-  }
+  } */
 
 
 
@@ -40,8 +42,11 @@ function App() {
       <Evento numero={2}/> */}
       {/* <Form/>
       <Evento/> */}
-      <h1>Renderização Condicional</h1>
-      <Condicional/>
+      {/* <h1>Renderização Condicional</h1>
+      <Condicional/> */}
+      <h1>Renderização de Listas</h1>
+      <OutraLista itens={meusItens}/>
+      <OutraLista itens={[]}/>
     </div>
   );
 }
