@@ -1,8 +1,7 @@
-.list{
-    display: flex;
+ul{
+    display: inline-flex;
     list-style: none;
 }
-
-.item{
+li{
     margin-right: 1em;
 }
